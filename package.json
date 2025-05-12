@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/postbuild.js",
+  "build": "astro build && node scripts/postbuild.js",
+    "postinstall": "cd node_modules/@emulatorjs/emulatorjs/data/minify && npm install && npm run build",
     "preview": "astro preview",
     "astro": "astro"
   },
